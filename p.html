@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+.mySlides {
+  display: none;
+}
+
+
+
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: forestgreen;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  color: rgb(96, 103, 96);
+}
+
+
+
+
+
+
+      .header{
+        background-color: rgb(238, 238, 240);
+        margin-bottom: 80px;
+      }
+      body{
+        font-family: sans-serif;
+      }
+      .top{
+        display: flex;
+        }
+        .top-l{
+          margin-left: 100px;
+          margin-top: 30px;
+        }
+        .top-c{
+          display: flex;
+          margin: 20px auto;
+        }
+        .top-r{
+          display: flex;
+          text-align: end;
+          margin-top: 30px;
+          margin-right: 100px;
+        }
+        .ca{
+          margin: 15px;
+        }
+        .ra{
+          color: forestgreen;
+          margin: 10px;
+          margin-right: 15px;
+        }
+        button{
+          background-color: forestgreen;
+          border: 1px solid forestgreen;
+          color: white;
+          border-radius: 5px;
+          margin: 0px 15px;
+          padding:10px 15px;
+        }
+        .a{
+          display: flex;
+        }
+        .a1{
+           width: 60%;
+           
+           margin: 100px 0px 50px 100px;
+           padding: 10px;
+           font-size: 30px;  
+        }
+        .a2{
+          color: rgb(27, 25, 25);
+          margin: 13px;  
+        }
+        .a3{
+          color: forestgreen;
+          margin: 13px;
+        }
+        .a4{
+          width: 40%;
+          padding-top: 70px;
+        }
+        p{
+          margin-top: 20px;
+          margin-bottom: 15px;
+          margin-left: 13px;
+          font-size: large;
+        }
+        .bot{
+          margin-top: 15px;
+          padding: 15px 35px;
+          margin-bottom: 50px;
+        }
+        .b2{
+         font-size: 40px;
+         color: rgb(115, 112, 112);
+        }
+        .b{
+          text-align: center;
+          margin: 10px;
+        }
+        .m{
+          height: 7px;
+          margin: 10px auto;
+          margin-left: 750px;
+        }
+        .b4{
+           display: flex;
+           margin-left: 100px;
+           margin-top: 10px;   
+        }
+        .b5{
+          margin: 20px;
+          padding: 30px 50px;
+        }
+        .c2{
+          text-align: center;
+         font-size: 40px;
+         color: rgb(115, 112, 112);
+        }
+        .c3{
+          text-align: center;
+        }
+        .c5{
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(162, 161, 161, 0.1);
+            width: 300px;
+            margin: 40px;
+        }
+        .c6{
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 40px;
+        }
+        .c7{
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 40px;
+        }
+        .c4{
+          display: flex;
+          margin-left:150px;
+          margin-right: 150px;
+        }
+        .d{
+          display: flex;
+          margin-top: 0%;
+        }
+        .f{
+          display: flex;
+          margin-top: 0%;
+        }
+        .d1{
+          width: 45%;
+          margin-left: 150px;
+        }
+        .d2{
+          width: 75%;
+          margin-left: 0%;
+          padding-left: 0%;
+          padding-top: 15px;
+        }
+        .d3{
+          font-size: 40px;
+          color: rgb(101, 101, 101);
+        }
+        .e{
+          background-color: aliceblue;
+          padding: 30px;
+          display: flex;
+        }
+        .e1{
+          margin-left: 100px;
+          width: 40%;
+        }
+        .e2{
+          color: rgb(27, 25, 25);
+          margin: 13px;
+          font-size: 40px;         
+        }
+        .e3{
+          color: forestgreen;
+          margin: 13px;
+          font-size: 40px;
+        }
+        .e4{
+          display: flex;
+          flex-wrap: wrap;
+          width: 50%; 
+        }
+        .e5{
+          display: flex;
+          margin-top: 0%;
+          text-align: center;
+          padding: 0px auto;
+          margin-left: 60px;
+          margin-right: 60px;
+          margin-bottom: 15px;
+        }
+        .e9{
+            margin: 5px 10px 0px 10px;
+           text-align: left;
+        }
+        .e7{          
+         padding:4px;
+        }
+        .e8{
+          padding-top: 5px;
+          padding-bottom: 0px;
+          color: rgb(69, 69, 69);
+          margin: 0px 10px 0px 10px;          
+        }
+        .e10{
+          padding-top: 5px;
+          padding-bottom: 0px;
+          color: rgb(69, 69, 69);
+          margin: 0px 10px 0px 0px;
+          padding-left: 0%;          
+        }
+        .el{
+          padding-top: 10px;
+        }
+        .g{
+          display: flex;
+          background-color: aliceblue;
+        }
+        .g1{
+          width: 40%;          
+        }
+        .g2{
+          width: 65%;
+          padding-top: 15px;
+          padding-left: 20px;
+          padding-right: 144px;
+          color: rgb(97, 96, 96);
+          line-height: 1.6;
+        }
+        .g3{
+          color: forestgreen;
+          padding-left: 15px;
+        }
+        .g5{
+          display: flex;
+        }
+        .g6{        
+          padding: 15px 20px;
+          margin-left: 0%;       
+        }
+        .h1{
+          text-align: center;
+        }
+        .h3{
+          color: rgb(123, 120, 120);
+          line-height: 1.6;
+          padding-left: 350px;
+          padding-right: 350px;
+        }
+        .h5{
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: ghostwhite;
+            width: 300px;
+        }
+        .h4{
+          display: flex;
+          padding-top: 130px;
+          padding-bottom: 50px;
+          margin-left:150px;
+          margin-right: auto;
+        }
+        .i{
+          background-color: aliceblue;
+          text-align: center;
+          padding: 20px 20px 0px 20px; 
+        }
+        .j{
+          background-color: black;
+          display: flex;
+        }
+        .j7{
+          color: white;
+          padding-left: 180px;
+        }
+        .jl{
+          display: flex;
+          padding-top: 40px;
+          padding-left: 180px;
+          padding-bottom: 40px;
+          padding-right: 200px;
+        }
+        .j8{
+          display: flex;
+          padding-left: 182px;
+          padding-bottom: 100px;
+          padding-top: 20px;
+        }
+         .j9{
+          margin: 5px;
+         }
+        .j2{
+          color: white;
+          padding-top: 30px;
+          padding-left: 120px;
+        }
+        
+        .j11{
+          padding: 6px;
+        }
+        .j3{
+          color: white;
+          padding-top: 30px;
+          padding-left: 120px;
+        }
+        .j4{
+          color: white;
+          padding-top: 30px;
+          padding-left: 100px;
+        }
+        .j13{
+          padding: 6px;
+        }
+        .j16{
+          background-color: darkgray;
+         padding-left: 6px;
+         padding-right: 8px;
+          color: black;
+          border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <div class="top">
+      <div class="top-l">
+        <img src="Logo.png" alt="im">
+      </div>
+      <div class="top-c">
+        <div class="ca">Home</div>
+        <div class="ca">Service</div>
+        <div class="ca">Feature</div>
+        <div class="ca">product</div>
+        <div class="ca">Testimonial</div>
+        <div class="ca">FAQ</div>
+      </div>
+      <div class="top-r">
+        <div class="ra">Login</div>
+        <div class="rb">
+        <button> Sign Up</button>
+      </div>
+    </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="a">
+          <div class="a1">
+            <h1 class="a2">Lessons and insights</h1>
+            <h1 class="a3">from 8 years</h1>
+            <p style="color: darkgray;">Where to grow your business as a photographer:site or socaial media?</p>
+            <button class="bot"> Register</button>
+          </div>
+          <div class="a4">
+            <img src="Illustration.png" alt="img" height="300" width="250">
+            </div>  
+        </div>
+      </div>
+      <div class="mySlides fade">      
+        <img src="img.jpg" alt="img" style="width:100%" height="600px">        
+      </div>    
+      <div class="mySlides fade">
+        <img src="nature.jpg" style="width:100%">       
+      </div>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      
+    </div>
+    
+    
+  </div>
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+
+</script>
+  <div class="b">
+    <div class="b1">
+      <h1 class="b2">Our clients</h1>
+      <p class="b3">We have been working with some Fortune 500+ clients</p>
+    </div>
+    <div class="b4">
+      <div class="b5"><img src="vector.png" alt="" height="40px" width="40px"></div>
+      <div class="b5"><img src="Logo (1).png" alt=""  height="50px" width="50px"></div>
+      <div class="b5"><img src="L3.png" alt=""  height="50px" width="50px"></div>
+      <div class="b5"><img src="L4.png" alt=""  height="50px" width="50px"></div>
+      <div class="b5"><img src="L5.png" alt=""  height="50px" width="50px"></div>
+      <div class="b5"><img src="L6.png" alt=""  height="50px" width="50px"></div>
+      <div class="b5"><img src="L7.png" alt="" height="50px" width="50px"></div>
+    </div>
+    </div>
+    <div class="c">
+      <div class="c1">
+          <h1 class="c2">Manage your entire community <br>in a system</h1>
+          <p class="c3">Who is Nextcent Suitable for ?</p>
+        </div>
+        <div class="c4">
+          <div class="c5">
+              <img src="Ic1.png" height="60" width="60">
+              <h1 style="color: rgb(69, 69, 69);">Membership<br>Organisations</h1>
+              <p style="color: rgb(69, 69, 69);">Our membership management software provides full automation of membership renewals and payments</p>         
+          </div>
+          <div class="c6">           
+            <img src="Ic2.png" height="60" width="60">
+            <h1 style="color: rgb(69, 69, 69);">National<br>Associations</h1>
+            <p  style="color: rgb(69, 69, 69);">Our membership management<br>software provides full automation of membership renewals and payments</p>       
+        </div>
+        <div class="c7">           
+          <img src="Ic3.png" height="60" width="60">
+          <h1  style="color: rgb(69, 69, 69);">Clubs and<br>groups</h1>
+          <p style="color: rgb(69, 69, 69);">Our membership management<br>software provides full automation of membership renewals and payments</p>      
+      </div>
+        </div>
+      </div>
+      <div class="d">
+        <div class="d1">
+          <img src="Frame.png" height="450px">
+        </div>
+        <div class="d2">
+          <h1 class="d3">The unseen of spending three<br>years at pixelgrade</h1>
+          <p style="color: rgb(123, 120, 120);line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Distinctio cupiditate perspiciatis ipsam repudiandae natus<br>
+             at, quod consequatur dicta quos placeat asperiores incidunt <br>animi fugiat vitae esse. Provident ipsum est quo.</p>     
+        </div>
+      </div>
+      <div class="e">
+         <div class="e1">
+          <h1 class="e2">Helping a local</h1>
+          <h1 class="e3">business reinvent itself</h1>
+          <p style="color: rgb(69, 69, 69);">We reached here with our hardwork and dedication</p>
+         </div>
+         <div class="e4">
+          <div class="e5">
+            <div class="e6">
+              <img src="Ic4.png" height="50px" width="50px">
+            </div>
+            <div class="e7">
+              <h2 class="e8">2,215,315</h2>
+              <p class="e9">Members</p>
+            </div>
+          </div>
+          <div class="e5">
+            <div class="e6">
+              <img src="Ic5.png" height="65px" width="65px">
+            </div>
+            <div class="e7">
+              <h2 class="e8">46,328</h2>
+              <p class="e9">Clubs</p>
+            </div>
+          </div>
+          <div class="e5">
+            <div class="e6">
+              <img src="Ic6.png" height="45px" width="45px">
+            </div>
+            <div class="e7">
+              <h2 class="e10">828,867</h2>
+              <p class="e9">Event bookings</p>
+            </div>
+          </div>
+          <div class="e5">
+            <div class="el">
+              <img src="Ic7.png" height="45px" width="40px">
+            </div>
+            <div class="e7">
+              <h2 class="e8">1,926,436</h2>
+              <p class="e9">Payments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f">
+        <div class="d1">
+          <img src="Frame.png" height="450px">
+        </div>
+        <div class="d2">
+          <h1 class="d3">How do design your site footer like <br>we did</h1>
+          <p style="color: rgb(123, 120, 120);line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Distinctio cupiditate perspiciatis ipsam repudiandae natus<br>
+             at, quod consequatur dicta quos placeat asperiores incidunt <br>animi fugiat vitae esse. Provident ipsum est quo.</p>
+             <button class="bot"> Learn more</button>
+        </div>
+      </div>
+      <div class="g">
+        <div class="g1">
+        </div>
+        <div class="g2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quam architecto alias provident 
+            id sunt ipsa nam deserunt molestias corporis suscipit nesciunt a, magni, esse sequi error distinctio consequatur
+             delectus Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis at beatae consequuntur expedita dolor
+              quidem dolores sequi veniam voluptates
+            . Aut, reiciendis! Laboriosam soluta consequatur voluptates! Quis iste facilis ducimus eaque Lorem ipsum dolor sit, amet 
+            consectetur adipisicing elit. Inventore nisi excepturi totam, iure ex laborum fugit suscipit ut voluptate quaerat eum maxime 
+            enim tenetur,Inventore nisi excepturi totam, iure ex laborum fugit suscipit ut voluptate quaerat eum maxime 
+            enim tenetur, 
+            </p>
+            <div class="g3">
+              <h3>Tim Smith</h3>
+            </div>
+            <div class="g4">
+              <p style="color: rgb(123, 120, 120)";>British dragon boat racing association</p>
+            </div>
+            <div class="g5">
+              <div class="g6"><img src="vector.png" alt="" height="30px" width="30px"></div>
+              <div class="g6"><img src="Logo (1).png" alt=""  height="40px" width="40px"></div>
+              <div class="g6"><img src="L3.png" alt=""  height="40px" width="40px"></div>
+              <div class="g6"><img src="L4.png" alt=""  height="40px" width="40px"></div>
+              <div class="g6"><img src="L5.png" alt=""  height="40px" width="40px"></div>
+              <div class="g6"><img src="L6.png" alt=""  height="40px" width="40px"></div>
+              <div><p style="color: forestgreen;">meet all customers →</p></div>
+            </div>
+        </div>
+      </div>
+      <div class="h">
+        <div class="h1">
+          <h1 class="h2">Caring is the new marketing</h1>
+          <p class="h3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, praesentium consequuntur 
+            ullam a commodi eligendi tempora voluptates
+             excepturi nemo sunt, accusantium, inventore assumenda tenetur. Alias eveniet asperiores omnis possimus</p>
+        </div>
+        <div class="h4">
+          <div class="h5">
+            <h2 style="color: rgb(108, 105, 105);">Creating Streamlined<br>Safeguarding processes with Oneren</h2>
+            <p style="color: forestgreen;">Readmore  →</p>
+        </div>
+        <div class="h5">
+          <h2 style="color: rgb(108, 105, 105);">What are your Safeguarding responsibilities and how can you Manage them?</h2>
+          <p style="color: forestgreen;">Readmore  →</p>
+      </div>
+      <div class="h5">
+        <h2 style="color: rgb(108, 105, 105);">Revamping the membership Model with Triathlon Australia</h2>
+        <p style="color: forestgreen;">Readmore  →</p>
+    </div>
+        </div>
+      </div>
+      <div class="i">
+        <h1>Pellentesque suscipit<br>fringilla libero eu.</h1>
+        <button class="bot"> Get a Demo → </button>
+      </div>
+      <div class="j">
+        <div class="j1">
+          <div class="jl">
+            <div class="j5">
+              <img src="Icon.png">
+            </div>
+            <div class="j6">
+             <img src="Nexcent.png">
+            </div>
+          </div>
+          <div class="j7">
+          <p>Copyright © 2020 Nexcenst ltd.</p>
+          <p>All rights reserved</p>  
+          </div>
+          <div class="j8">
+            <div class="j9"><img src="lo1.png" alt="" height="35px" width="35px"></div>
+            <div class="j9"><img src="lo2.png" alt=""  height="35px" width="35px"></div>
+            <div class="j9"><img src="lo3.png" alt=""  height="35px" width="35px"></div>
+            <div class="j9"><img src="Social Icons.png" alt=""  height="35px" width="35px"></div> 
+        </div>
+        </div>
+        <div class="j2">
+          <div class="j10">
+            <h2>Company</h2>
+          </div>
+          <div class="j11">About us</div>
+          <div class="j11">Blog</div>
+          <div class="j11">Contact us</div>
+          <div class="j11">Pricing</div>
+          <div class="j11">Testimonials</div>
+        </div>
+        <div class="j3">
+          <div class="j12">
+            <h2>Support</h2>
+          </div>
+          <div class="j13">Help Center</div>
+          <div class="j13">Terms of service</div>
+          <div class="j13">Legal</div>
+          <div class="j13">Privacy Policy</div>
+          <div class="j13">Status</div>
+        </div>
+        <div class="j4">
+          <div class="j15">
+          <h2>Stay up to date</h2>
+        </div>
+        <div class="j16">
+          <p>Your email address        ✉</p>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
